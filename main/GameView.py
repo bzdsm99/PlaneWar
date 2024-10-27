@@ -41,9 +41,10 @@ class GameScreenManager(ScreenImages):
 
 
 class GameView(GameScreen, GameMusic, GameStatus):
-    pg.init()   #初始化检查
-    pg.mixer.init()
+    
     def __init__(self):
+        pg.init()   #初始化检查
+        pg.mixer.init()
         self.__controller = GameController()
         super().__init__()
         self.__manager = GameScreenManager()
@@ -57,11 +58,9 @@ class GameView(GameScreen, GameMusic, GameStatus):
 
     def main(self):
         #self.__screen = pygame.display.set_mode(SCREEN_SIZE)
-        # 调用添加敌机方法
         # 循环播放背景音乐
         pygame.mixer.music.play(-1)
-        # 调用添加敌机方法
-        self.__controller.add_enemies_manager(15, 8, 2)
+
 
         # 调用添加子弹方法
         self.__controller.add_bullet1(self.__screenManager.bullet1_number,self.__screenManager.hero.rect.midtop,Bullet1,self.__screenManager.bullet1_list)

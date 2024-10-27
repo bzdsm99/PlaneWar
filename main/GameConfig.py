@@ -20,7 +20,7 @@ ICON_IMAGE = os.path.join(CURRENT_DIR, "..", "images", "icon.png")              
 # 飞机大战标题图片
 TITLE_IMAGE = os.path.join(CURRENT_DIR, "..", "images", "name.png")
 # 开始游戏图片
-START_IMAGE = os.path.join(CURRENT_DIR, "..", "images", "start_nor.png")
+START_IMAGE = os.path.join(CURRENT_DIR, "..", "images", "start.png")
 # 开始游戏加载动画图片
 LOADING_IMAGE1 = os.path.join(CURRENT_DIR, "..", "images", "game_loading1.png")
 LOADING_IMAGE2 = os.path.join(CURRENT_DIR, "..", "images", "game_loading2.png")
